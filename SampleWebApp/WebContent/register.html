@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+function validatefname(){
+	/*var fname = document.getElementById("fname").value;
+	alert(fname);*/
+	var fname = document.getElementById("fname").value;
+	
+	if(fname == "" || fname == null){			
+		alert("Please Provide FirstName");
+	}else if(fname.length < 4){
+		alert("FirstName cannot be less than 4 characters");
+	}
+		
+}
+</script>
+
+</head>
+<body>
+<h2 align="center"> Registration Form</h2>
+<form action = "" onsubmit = "validatefname()">
+<div align="center">
+
+	<table>
+	
+	<tr>
+	<td align="left"><label>FirstName </label></td> <td><input type="text" name="firstname" id="fname" minlength="4" maxlength="10" required="required"></td>
+	</tr>
+	
+	<tr>
+	<td align="left"><label>LastName </label></td> <td><input type="text" name="lastname"></td>
+	</tr>
+	
+	<tr>
+	<td align="left"><label>Email ID </label></td> <td><input type="email" name="email id"></td>
+	</tr>
+	
+	<tr>
+	<td align="left"><label>Gender </label> </td>
+	<td>Male  : <input type="radio" name="gender" value="male">
+	    Female: <input type="radio" name="gender" value="female"> </td>
+	</tr>
+	
+	<tr>
+	<td align="left"> <input type="submit" value="REGISTER"></td>
+	</tr>
+	
+	
+	</table>
+	</div>
+</form>
+</body>
+</html>
